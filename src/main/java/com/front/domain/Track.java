@@ -1,4 +1,4 @@
-package frontunion.com.front.domain;
+package com.front.domain;
 
 import java.util.Date;
 

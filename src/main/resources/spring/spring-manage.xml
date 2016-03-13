@@ -6,7 +6,7 @@
         " default-autowire="byName">
 
 
-    <bean id="frontService" class="frontunion.com.front.service.impl.FrontServiceImpl"/>
+    <bean id="frontService" class="com.front.service.impl.FrontServiceImpl"/>
 
 
 	

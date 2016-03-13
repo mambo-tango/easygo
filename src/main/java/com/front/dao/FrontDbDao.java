@@ -1,8 +1,8 @@
-package frontunion.com.front.dao;
+package com.front.dao;
 
 import java.util.List;
 
-import frontunion.com.front.domain.Track;
+import com.front.domain.Track;
 
 public interface FrontDbDao {
 	
