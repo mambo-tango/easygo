@@ -7,7 +7,7 @@
                      http://www.springframework.org/schema/context
                      http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:jdbc/jdbc.properties"/>
+    <context:property-placeholder location="classpath:application.properties"/>
 
     <!--cache data source-->
     <bean name="localmysqlDS" class="com.mchange.v2.c3p0.ComboPooledDataSource">

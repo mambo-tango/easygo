@@ -129,10 +129,16 @@
 			<artifactId>mybatis</artifactId>
 			<version>3.2.8</version>
 		</dependency>
+		
+		<dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.1</version>
+        </dependency>
 
 	</dependencies>
 	<build>
-		<finalName>frontunion</finalName>
+		<!-- <finalName>frontunion</finalName> -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -161,6 +167,48 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
 		</plugins>
+		
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 	</build>
+	
+	
+	<profiles>
+		<profile>
+			<id>test</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<filters>
+					<filter>${project.basedir}/src/main/resources/config/test.properties</filter>
+				</filters>
+			</build>
+		</profile>
+		<profile>
+			<id>formal</id>
+						<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<filters>
+					<filter>${project.basedir}/src/main/resources/config/formal.properties</filter>
+				</filters>
+			</build>
+		</profile>
+	</profiles>
+	
+	
 </project>

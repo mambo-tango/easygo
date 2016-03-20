@@ -2,6 +2,8 @@ package com.front.service.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.front.dao.FrontDbDao;
 import com.front.domain.Track;
 import com.front.service.FrontService;
