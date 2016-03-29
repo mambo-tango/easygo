@@ -88,7 +88,7 @@
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 监控<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="flot.html">Flot Charts</a>
@@ -100,7 +100,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Job管理</a>
                         </li>
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
@@ -181,16 +181,46 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">走件流程</h1>
+                    <h4 class="page-header">前置库查询</h4>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-            <div class="row">
+
+			<div class="form-group col-lg-4">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="单号"> 
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">查询</button>
+					</span>
+				</div>
+				<!-- /input-group -->
+			</div>
+
+			<div class="form-group btn-group" data-toggle="buttons">
+				<label class="btn btn-default"> <input type="radio"
+					name="options" id="option1"> 揽收
+				</label> <label class="btn btn-default"> <input type="radio"
+					name="options" id="option2"> 容器
+				</label> <label class="btn btn-default"> <input type="radio"
+					name="options" id="option3"> 派件
+				</label>
+				<label class="btn btn-default"> <input type="radio"
+					name="options" id="option1"> 签收
+				</label> <label class="btn btn-default"> <input type="radio"
+					name="options" id="option2"> 到发车
+				</label> <label class="btn btn-default"> <input type="radio"
+					name="options" id="option3"> 单据
+				</label>
+			</div>
+
+
+         
+
+			<div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            DataTables Advanced Tables
+                            	查询结果
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -224,17 +254,13 @@
                                 </table>
                             </div>
                             <!-- /.table-responsive -->
-                            <div class="well">
-                                <h4>DataTables Usage Information</h4>
-                                <p>DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at <a target="_blank" href="https://datatables.net/">https://datatables.net/</a>.</p>
-                                <a class="btn btn-default btn-lg btn-block" target="_blank" href="https://datatables.net/">View DataTables Documentation</a>
-                            </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                 </div>
                 <!-- /.col-lg-12 -->
+            </div>
             </div>
             <!-- /.row -->
            

@@ -7,5 +7,5 @@
        <import resource="classpath:spring/spring-manage.xml"/>
        <import resource="classpath:spring/spring-mvc.xml"/>
        <import resource="classpath:spring/spring-mybatis.xml"/>
-
+		<import resource="classpath:spring/spring-quartz.xml"/>
 </beans>

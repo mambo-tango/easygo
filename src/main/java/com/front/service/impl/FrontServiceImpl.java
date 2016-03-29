@@ -20,20 +20,6 @@ public class FrontServiceImpl implements FrontService{
 	@Override
 	public List<Track> loadAllTrack() throws Exception {
 		
-//		List<Track> list = new ArrayList<Track>(); 
-//    	for(int i=1; i<=15; i++){
-//        	Track t = new Track();
-//        	t.setId(i+"id");
-//        	t.setWaybillNo("waybillNo"+i);
-//        	t.setOrgCode(i+"999999");
-//        	t.setOpCode("310"+i);
-//        	t.setCreateTime(new Date());
-//        	t.setUploadTime(new Date());
-//        	t.setErrorMessage("校验失败"+i);
-//        	list.add(t); 
-//    	}
-//		
-//		return list;
 		return frontDbDao.loadAllTrack();
 	}
 	
